@@ -11,14 +11,10 @@
             "id": "c5cc1cc01a9ada35",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CPTS Notes/Reconnaissance & Enumeration/FTP 21.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "FTP 21"
+              "title": "New tab"
             }
           }
         ]
@@ -156,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Reconnaissance & Enumeration/FTP 21.md",
+                "file": "CPTS Notes/Reconnaissance %26 Enumeration/FTP 21.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -194,12 +190,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c5cc1cc01a9ada35",
+  "active": "0ad3b72cef29845d",
   "lastOpenFiles": [
+    "CPTS Notes/Reconnaissance %26 Enumeration/DNS 53.md",
+    "CPTS Notes/Reconnaissance & Enumeration/FTP 21.md",
     "CPTS Notes/Reconnaissance %26 Enumeration/FTP 21.md",
     "README.md",
     "CPTS Notes/Reconnaissance & Enumeration/DNS 53.md",
-    "CPTS Notes/Reconnaissance %26 Enumeration/DNS 53.md",
     "CPTS Notes/Reconnaissance %26 Enumeration",
     "CPTS Notes/README.md",
     "CPTS Notes/Exploitation/Web Attacks/File Inclusion.md",
