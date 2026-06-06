@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/Exploitation/Web Attacks/File Inclusion.md",
+                "file": "CPTS Notes/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "File Inclusion"
+              "title": "README"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Exploitation/Web Attacks/File Inclusion.md",
+                "file": "CPTS Notes/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of File Inclusion"
+              "title": "Outline of README"
             }
           },
           {
@@ -176,7 +176,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -194,10 +194,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2618fcd8c35845bf",
+  "active": "0e01fcb4267058d1",
   "lastOpenFiles": [
-    "CPTS Notes/Exploitation/Web Attacks/Command Injection.md",
     "CPTS Notes/Exploitation/Web Attacks/File Inclusion.md",
+    "CPTS Notes/README.md",
+    "CPTS Notes/Exploitation/Web Attacks/Command Injection.md",
     "CPTS Notes/AD/Notes.md"
   ]
 }
