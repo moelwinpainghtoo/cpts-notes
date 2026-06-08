@@ -152,13 +152,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Reconnaissance %26 Enumeration/FTP 21.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of FTP 21"
+              "title": "Outline"
             }
           },
           {
