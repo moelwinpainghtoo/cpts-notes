@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CPTS Notes/Utilities/Web Proxies.md",
+                "file": "CPTS Notes/Utilities/SQLMap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Web Proxies"
+              "title": "SQLMap"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CPTS Notes/Utilities/Web Proxies.md",
+                "file": "CPTS Notes/Utilities/SQLMap.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Web Proxies"
+              "title": "Outline of SQLMap"
             }
           },
           {
@@ -196,6 +196,8 @@
   },
   "active": "35b80230adc670a0",
   "lastOpenFiles": [
+    "CPTS Notes/Utilities/Web Proxies.md",
+    "CPTS Notes/Utilities/SQLMap.md",
     "CPTS Notes/Exploitation/Web Attacks/SQL Injection.md",
     "CPTS Notes/Exploitation/Web Attacks/XXE.md",
     "CPTS Notes/Exploitation/Web Attacks/XSS.md",
@@ -204,7 +206,6 @@
     "CPTS Notes/Exploitation/Web Attacks/File Upload.md",
     "CPTS Notes/Exploitation/Web Attacks/File Inclusion.md",
     "CPTS Notes/Exploitation/Web Attacks/Command Injection.md",
-    "CPTS Notes/Utilities/Web Proxies.md",
     "CPTS Notes/Reconnaissance %26 Enumeration/DNS 53.md",
     "CPTS Notes/Reconnaissance & Enumeration/FTP 21.md",
     "CPTS Notes/Reconnaissance %26 Enumeration/FTP 21.md",
