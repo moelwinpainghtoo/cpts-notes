@@ -40,5 +40,6 @@ sqlmap -u "http://www.target.com/vuln.php?id=1" -v 6 --batch
 sqlmap -u "http://www.target.com/vuln.php?id=1" --batch --parse-errors
 
 # Using Proxy
-sqlmap -u "http://www.target.com/vuln.php?id=1" --proxy"http://127.0.0.1:8080"
+sqlmap -u "http://www.target.com/vuln.php?id=1" --proxy="http://127.0.0.1:8080"
 ```
+
